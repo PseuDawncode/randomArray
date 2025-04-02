@@ -15,3 +15,12 @@ for(var i in array){
 }
 
 console.log(randomArray);
+
+// the sum of even numbers in the randomArray
+var evensSum = 0;
+for (var i = 0; i < randomArray.length; i++) {
+    if (randomArray[i] % 2 === 0) {
+        evensSum += randomArray[i];
+    }
+}
+console.log("Sum of even numbers:", evensSum);
